@@ -1,0 +1,76 @@
+import time
+
+print('Esse algoritmo foi feito para ler um número inserido e descobrir se é possível ser divido por 2, 3, 5 ou 6 de acordo com sua escolha.')
+time.sleep(1)
+numero= int(input('Insira um número natural aqui: '))
+time.sleep(1)
+print('''
+------------------------------------
+[1] Descobrir se é divisível por 2
+[2] Descobrir se é divisível por 3
+[3] Descobrir se é divisível por 5
+[4] Descobrir se é divisível por 6
+------------------------------------
+''')
+
+opção=int(i…
+#quero fazer um algoritmo que leia o input de um número , dê a opção de descobrir se um número é divisível por 2, 3, 4, 5 ou 6, dizer se é divisível ou não e calcular a resposta
+#ficou faltando o 4, mas ele ainda precisa de uma lógica diferente, provavelmente vou ter que usar fatiamento
+#espera, por que eu to pensando que nem gente se eu tenho uma máquina que não precisa da mesma lógica que eu? é literalmente só fazer a mesma coisa
+
+import time
+
+print('Esse algoritmo foi feito para ler um número inserido e descobrir se é possível ser divido por 2, 3, 5 ou 6 de acordo com sua escolha.')
+time.sleep(1)
+numero= int(input('Insira um número natural aqui: '))
+time.sleep(1)
+print('''
+------------------------------------
+[1] Descobrir se é divisível por 2
+[2] Descobrir se é divisível por 3
+[3] Descobrir se é divisível por 4
+[4] Descobrir se é divisível por 5
+[5] Descobrir se é divisível por 6
+------------------------------------
+''')
+
+opção=int(input('Escolha uma opção:'))
+
+if opção == 1:
+    if numero % 2 == 0:
+        resultado_divisão = numero/2
+        print(f'{numero}, o seu número inserido, é divisível por 2, resultando em {resultado_divisão}.')
+    else:
+        print(f'{numero}, o seu número inserido, NÃO é divisível por 2.')
+    
+elif opção == 2:
+    if numero % 3 == 0:
+        resultado_divisão = numero/3
+        print(f'{numero}, o seu número inserido, é divisível por 3, resultando em {resultado_divisão}.')
+    else:
+        print(f'{numero}, o seu número inserido, NÃO é divisível por 3.')
+
+elif opção == 3:
+    if numero % 4 == 0:
+        resultado_divisão = numero/4
+        print(f'{numero}, o seu número inserido, é divisível por 4, resultando em {resultado_divisão}.')
+    else:
+        print(f'{numero}, o seu número inserido, NÃO é divisível por 4.')
+
+
+elif opção == 4:
+    if numero % 5 == 0:
+        resultado_divisão = numero/5
+        print(f'{numero}, o seu número inserido, é divisível por 5, resultando em {resultado_divisão}.')
+    else:
+        print(f'{numero}, o seu número inserido, NÃO é divisível por 5.')
+
+elif opção == 5:
+    if numero % 6 == 0:
+        resultado_divisão = numero/6
+        print(f'{numero}, o seu número inserido, é divisível por 6, resultando em {resultado_divisão}.')
+    else:
+        print(f'{numero}, o seu número inserido, NÃO é divisível por 6.')
+
+else:
+    print('Opção inválida, tente novamente.')
